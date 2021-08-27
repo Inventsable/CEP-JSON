@@ -2,7 +2,6 @@ import { evalScript } from "workaround";
 const MANIFEST = require("./data.json");
 
 export default function (DEBUG = true) {
-  console.log();
   evalScript(MANIFEST.json_polyfill)
     .then((res) => {
       if (DEBUG) console.log("JSON loaded successfully");
