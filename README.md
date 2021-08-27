@@ -8,7 +8,9 @@ npm i CEP-JSON
 ```
 
 ```js
-import loadJSON from "CEP-JSON";
+import loadJSON from "cep-json";
+// OR:
+const loadJSON = require("cep-json").default;
 
 // Usage within async/await
 await loadJSON();
